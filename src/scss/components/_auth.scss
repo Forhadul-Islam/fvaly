@@ -1,0 +1,64 @@
+@import "../variables/variables";
+.authenticate {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    height: 4rem;
+    object-fit: contain;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    // border: 2px solid #b6b6b6;
+    padding: 3rem;
+    max-height: 30rem;
+    width: 40rem;
+    justify-content: center;
+    border-radius: 2px;
+    &--form {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: .5rem;
+      }
+      &-input {
+        line-height: 1;
+        margin-bottom: 1rem;
+        border-radius: 0.3rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 1px solid;
+
+        &:focus {
+          outline: none;
+          border-left: 0.5rem solid #111430;
+        }
+      }
+      &-button {
+        @include primary-button-style;
+      }
+    }
+    &--switch {
+      font-size: 1rem;
+      padding-top: 1rem;
+      &-span {
+        padding-left: 0.5rem;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 500;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+    &__top {
+        // @include container;
+        &--item {
+            font-size: 18px;
+        }
+        &--line {
+            height: 0.5px;
+            background-color: rgb(214, 214, 214);
+        }
+    }
+
+    //middle header
+    &__middle {
+        &--logo {
+            height: 55px;
+        }
+    }
+}

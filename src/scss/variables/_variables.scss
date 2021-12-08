@@ -1,0 +1,27 @@
+//container
+@mixin container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Colors
+$primary: #c9151b;
+$white: #ffffff;
+$light: #f7f8fa;
+$black: #1a202c;
+
+
+@mixin primary-button-style {
+  font-size: 1.5rem;
+  background-color: #111430;
+  color: #ffffff;
+  padding: 0.7rem 4rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  // max-width: 17rem;
+  &:hover {
+    background-color: #121741;
+  }
+}
